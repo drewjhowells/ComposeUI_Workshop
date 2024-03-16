@@ -45,9 +45,12 @@ fun TextComposable() {
 @Composable
 fun ButtonComposable() {
 	//Buttons
-	Button(onClick = {
+	Button(
+		onClick = {
 		//Do Something
-	}) {
+	},
+		modifier = Modifier.padding(20.dp)
+	) {
 		Text(text = "My Button")
 	}
 }
